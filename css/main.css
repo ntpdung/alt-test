@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../assets/fonts/HelveticaNeueLight.ttf');
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    /* font-family: 'Montserrat', 'sans-serif'; */
+    font-family: 'Helvetica Neue', 'sans-serif';
 }
 
 .text-white {
@@ -63,7 +69,7 @@ nav {
 /* sec1 */
 
 .sec1 {
-    background: url(../images/09.png) center 100% no-repeat;
+    background: url(../assets/images/09.png) center 100% no-repeat;
 }
 
 .top-header {
@@ -73,6 +79,10 @@ nav {
 
 .top-header .logo {
     margin: 0 auto;
+}
+
+.top-header .logo img {
+    width: 80%;
 }
 
 .top-header .login {
@@ -89,41 +99,43 @@ nav {
 
 .intro-container {
     position: relative;
-    min-height: 975px;
     display: flex;
     justify-content: center;
     text-align: center;
-
+    padding-top: 60px;
 }
 
 .intro-container .burble {
-    position: absolute;
+    position: relative;
     opacity: 0; 
-    /* Safari 4.0 - 8.0 */
     -webkit-animation-name: burbleAnimation;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 3s;
-    -webkit-animation-direction: normal;
-    /* Standard syntax */
+    -webkit-animation-fill-mode: forwards;
+    
     animation-name: burbleAnimation;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     animation-timing-function: linear;
-    animation-delay: 3s;
-    -webkit-animation-direction: normal;
-}
-
-@keyframes burbleAnimation {
-    0%   {opacity: 0.5; bottom:-400px;}
-    25%  {opacity: 1; bottom:-300px;}
-    50%  {opacity: 1; bottom:-200px;}
-    75%  {opacity: 1; bottom:-100px;}
-    100% {opacity: 1; bottom:0;}
+    animation-fill-mode: forwards;
 }
 
 .intro-container .intro-content {
     position: absolute;
-    top: 25%;
+    top: 20%;
+    transform:scale(0);
+    -webkit-animation-name: introAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-name: introAnimation;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 .intro-container .girl {
@@ -131,7 +143,39 @@ nav {
     bottom: 0;
     left: 0;
     right: 50px;
+    opacity: 0; 
+    -webkit-animation-name: girlAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-name: girlAnimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
+
+@keyframes burbleAnimation {
+    0%   {opacity: 0; bottom: -200px;}
+    25%  {opacity: 0; bottom: -100px;}
+    50%  {opacity: 0; bottom: -50px;}
+    75%  {opacity: 1; bottom: 0px;}
+    100% {opacity: 1; bottom: 60px;}
+}
+
+@keyframes introAnimation {
+    from  {opacity: 0; transform:scale(0);}
+    to {opacity: 1; transform:scale(1);}
+}
+
+@keyframes girlAnimation {
+    0%   {opacity: 0; bottom: -300px;}
+    25%  {opacity: 0; bottom: -200px;}
+    50%  {opacity: 0; bottom: -100px;}
+    75%  {opacity: 1; bottom: 0px;}
+    100% {opacity: 1; bottom: 0px;}
+}
+
 
 .intro-container .girl img {
     display: block;
@@ -144,7 +188,7 @@ nav {
 
 .intro-content .intro-text {
     font-size: 25px;
-    margin: 50px auto 20px;
+    margin: 30px auto 20px;
 }
 
 .intro-container .intro-content .btn-ls {
@@ -164,7 +208,7 @@ nav {
 
 /* sec2 */
 .sec2 {
-    background: url('../images/wave-bg.png') center 100% no-repeat;
+    background: url('../assets/images/wave-bg.png') center 100% no-repeat;
     padding: 40px 0;
 }
 
@@ -197,7 +241,6 @@ nav {
 }
 
 .sec2 .item .content {
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 

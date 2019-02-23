@@ -25,6 +25,7 @@ body {
     border-radius: 17.5px;
     font-size: 16px;
     height: 35px;
+    cursor: pointer;
 }
 
 .col {
@@ -109,14 +110,14 @@ nav {
     position: relative;
     opacity: 0; 
     -webkit-animation-name: burbleAnimation;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     
     animation-name: burbleAnimation;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -126,14 +127,14 @@ nav {
     top: 20%;
     opacity: 0;
     -webkit-animation-name: introAnimation;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     
     animation-name: introAnimation;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -156,10 +157,10 @@ nav {
 }
 
 @keyframes burbleAnimation {
-    0%   {opacity: 0; bottom: -200px;}
-    25%  {opacity: 0; bottom: -100px;}
-    50%  {opacity: 0; bottom: -50px;}
-    75%  {opacity: 1; bottom: 0px;}
+    0%   {opacity: 0; bottom: 0;}
+    25%  {opacity: 0; bottom: 10px;}
+    50%  {opacity: 0; bottom: 20px;}
+    75%  {opacity: 1; bottom: 30px;}
     100% {opacity: 1; bottom: 60px;}
 }
 

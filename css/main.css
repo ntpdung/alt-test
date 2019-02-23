@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Montserrat', 'sans-serif'; */
+}
+
+.text-white {
+    color: #fff;
+}
+
+.sm-text {
+    font-size: 14px;
+}
+
+.btn {
+    border-radius: 17.5px;
+    font-size: 16px;
+    height: 35px;
+}
+
+.col {
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+.col-4 {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.lg-title {
+    font-size: 55px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.sub-title {
+    font-size: 20px;
+}
+
+nav {
+    background-color: #273F63;
+    display: flex;
+}
+
+/* sec1 */
+
+.sec1 {
+    background: url(../images/09.png) center 100% no-repeat;
+}
+
+.top-header {
+    display: flex;
+    padding: 30px 0;
+}
+
+.top-header .logo {
+    margin: 0 auto;
+}
+
+.top-header .login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header .login .login-btn {
+    width: 88px;
+    color: #CB4E5B;
+    margin-left: 10px;
+}
+
+.intro-container {
+    position: relative;
+    min-height: 975px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.intro-container .burble {
+    position: absolute;
+    opacity: 0; 
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: burbleAnimation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-direction: normal;
+    /* Standard syntax */
+    animation-name: burbleAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    -webkit-animation-direction: normal;
+}
+
+@keyframes burbleAnimation {
+    0%   {opacity: 0.5; bottom:-400px;}
+    25%  {opacity: 1; bottom:-300px;}
+    50%  {opacity: 1; bottom:-200px;}
+    75%  {opacity: 1; bottom:-100px;}
+    100% {opacity: 1; bottom:0;}
+}
+
+.intro-container .intro-content {
+    position: absolute;
+    top: 25%;
+}
+
+.intro-container .girl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 50px;
+}
+
+.intro-container .girl img {
+    display: block;
+    margin: 0 auto;
+}
+
+.intro-content .intro-title {
+    /* font-size: 55px; */
+}
+
+.intro-content .intro-text {
+    font-size: 25px;
+    margin: 50px auto 20px;
+}
+
+.intro-container .intro-content .btn-ls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content .intro-btn {
+    width: 163px;
+    color: #BE1C2F;
+    margin-bottom: 10px;
+    border: 1px solid #BE1C2F;
+    background-color: transparent;
+}
+
+/* sec2 */
+.sec2 {
+    background: url('../images/wave-bg.png') center 100% no-repeat;
+    padding: 40px 0;
+}
+
+.sec2 .knowledge .grid {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sec2 .grid .col {
+    padding: 25px 30px;
+}
+
+.sec2 .title {
+    text-align: center;
+}
+
+.sec2 .knowledge .title {
+    margin-bottom: 40px;
+}
+
+.sec2 .knowledge .computer-img {
+    margin: 40px auto 0;
+    max-width: 80%;
+    display: block;
+}
+
+.sec2 .item {
+    /* color: #fff; */
+    text-align: center;
+}
+
+.sec2 .item .content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.sec2 .practice .item {
+    background-color:  #273F63;;
+    border-radius: 50%;
+}
+
+.sec2 .practice .item {
+  /* visibility: hidden;
+  opacity: 0; */
+}
+
+.sec2 .practice .item:hover {
+  transition: visibility 0s, opacity 0.5s linear;
+  /* visibility: visible;
+  opacity: 1; */
+}
+
+
+.sec2 .practice .item .practice-link {
+    /* color: #fff; */
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid #BE1C2F;
+}
+
+/* .sec2 .practice .item .practice-link::after {
+    content: '';
+} */
+
+@media (min-width: 1200px) {
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-4 {
+        width: 33.3333%;
+    }
+
+    .container {
+        width: 1200px; 
+    }
+
+    .sec2 .knowledge .grid {
+        max-width: 850px;
+    }
+
+    .sec2 .practice .title {
+        position: relative;
+        top: -83px;
+    }
+}

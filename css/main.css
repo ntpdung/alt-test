@@ -124,7 +124,7 @@ nav {
 .intro-container .intro-content {
     position: absolute;
     top: 20%;
-    transform:scale(0);
+    opacity: 0;
     -webkit-animation-name: introAnimation;
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 2s;
@@ -145,12 +145,12 @@ nav {
     right: 50px;
     opacity: 0; 
     -webkit-animation-name: girlAnimation;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     
     animation-name: girlAnimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }

@@ -70,33 +70,16 @@ nav {
     display: none;
 }
 
-.fixedNav {
+#fixedNav {
     display: block;
     position: fixed;
     left: 0;
     right: 0;
-    /* top: 0; */
     z-index: 10;
     color: #fff;
-
-    transition: all .4s;
-    -webkit-animation-name: navAnimation;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-fill-mode: forwards;
-    
-    animation-name: navAnimation;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
 }
 
-@keyframes navAnimation {
-    from { top: -100px}
-    to { top: 0 };
-}
-
-.fixedNav .container {
+#fixedNav .container {
     display: flex;
     position: relative;
     justify-content: center;
@@ -161,6 +144,7 @@ nav .login .login-btn {
 
 .top-header .language-icon {
     width: 80%;
+    display: block;
 }
 
 .top-header .login {

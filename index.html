@@ -9,19 +9,27 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/mouse-effect.css">
     </head>
     <body>
-        <!-- <nav>
-            <div>
-                <span class="menu-dash"></span>
-                <span>GENERAL ENGLISH</span>
-                <span>TOEIC</span>
-                <span>IELTS</span>
+        <nav>
+            <div class="container">
+                <div class="nav-ls">
+                    <div class="dash-group">
+                        <span class="dash"></span>
+                        <span class="dash"></span>
+                        <span class="dash"></span>
+                    </div>
+                    <a href="#" class="ls-item">GENERAL ENGLISH</a>
+                    <a href="#" class="ls-item">TOEIC</a>
+                    <a href="#" class="ls-item">IELTS</a>
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="alt ielts logo">
+                </div>
+                <div class="login">
+                    <span>Login</span>
+                    <button class="btn login-btn"><span>Get Started</span></button>
+                </div>
             </div>
-            <img src="./assets/images/logo.png" alt="alt ielts logo">
-            <div class="login">
-                <span>Login</span>
-                <button class="btn login-btn">Get Started</button>
-            </div>
-        </nav> -->
+        </nav>
         <div class="main-container">
             <section class="sec sec1">
                 <div class="container">
@@ -29,12 +37,12 @@
                         <div class="logo">
                             <img title="alt ielts logo" src="./assets/images/logo.png" alt="alt ielts logo" />
                         </div>
-                        <!-- <div class="login">
+                        <div class="login">
                             <a href="#">
                                 <img class="language-icon" alt="alt ielts" src="./assets/images/vn.png" />
                             </a>
-                            <button class="btn login-btn">Login</button>
-                        </div> -->
+                            <button class="btn login-btn"><span>Login</span></button>
+                        </div>
                     </div>
                     <div class="intro-container">
                         <div class="burble">
@@ -58,12 +66,12 @@
                     </div>
                 </div>
             </section>
-            <section class="sec sec2">
+            <section id="sec2" class="sec sec2">
                 <div class="container">
                     <div class="knowledge">
                         <h2 class="title">Widen your knowledge - Broaden your connection</h2>
                         <div class="grid">
-                            <article class="col col-6 ite">
+                            <article class="col col-6 item">
                                 <h3 class="sub-title">Free To Use</h3>
                                 <p class="content">
                                     Thousand practice tests, thousand helpful books
@@ -100,34 +108,40 @@
                     <div class="practice">
                         <h2 class="title">Practice Makes Perfect</h2>
                         <div class="grid">
-                            <div class="col col-4 item">
-                                <h3 class="sub-title">General English</h3>
-                                <p class="content">
-                                    Improve your English skills with hundreds
-                                    of exercises on topics that you might run
-                                    into difficult in learing process.
-                                </p>
-                                <a class="practice-link" href="#">Practice</a>
+                            <div class="col col-4">
+                                <div class="item">
+                                    <h3 class="sub-title">General English</h3>
+                                    <p class="content">
+                                        Improve your English skills with hundreds
+                                        of exercises on topics that you might run
+                                        into difficult in learing process.
+                                    </p>
+                                    <a class="practice-link" href="#">Practice</a>
+                                </div>
                             </div>
-                            <div class="col col-4 item">
-                                <h3 class="sub-title">TOEIC</h3>
-                                <p class="content">
-                                    2019 of IIG. After taking our TOEIC test,
-                                    you can recieve your score and know the
-                                    answer immediately
-                                </p>
-                                <a class="practice-link" href="#">Practice</a>
+                            <div class="col col-4">
+                                <div class="item">
+                                    <h3 class="sub-title">TOEIC</h3>
+                                    <p class="content">
+                                        2019 of IIG. After taking our TOEIC test,
+                                        you can recieve your score and know the
+                                        answer immediately
+                                    </p>
+                                    <a class="practice-link" href="#">Practice</a>
+                                </div>
                             </div>
-                            <div class="col col-4 item">
-                                <h3 class="sub-title">IELTS</h3>
-                                <p class="content">
-                                    More than 3 million IELTS tests were
-                                    taken in the past year. Practice
-                                    Listening, Speaking, Reading and
-                                    Writing in the most convenient way right
-                                    here right now.
-                                </p>
-                                <a class="practice-link" href="#">Practice</a>
+                            <div class="col col-4">
+                                <div class="item">
+                                    <h3 class="sub-title">IELTS</h3>
+                                    <p class="content">
+                                        More than 3 million IELTS tests were
+                                        taken in the past year. Practice
+                                        Listening, Speaking, Reading and
+                                        Writing in the most convenient way right
+                                        here right now.
+                                    </p>
+                                    <a class="practice-link" href="#">Practice</a>
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -137,4 +151,5 @@
         </div>
     </body>
     <script src="js/mouse-effect.js"></script>
+    <script src="js/main.js"></script>
 </html>
